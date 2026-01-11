@@ -1,5 +1,5 @@
-export const baseURL = "https://api.disabilityinclusionresourcehub.com";
+export const baseURL = "http://localhost:3000";
 
 export const getBaseUrl = (): string => {
-  return process.env.NEXT_PUBLIC_API_BASE_URL || `${baseURL}/handicap/api/v1`;
+  return process.env.NEXT_PUBLIC_API_BASE_URL || `${baseURL}`;
 };

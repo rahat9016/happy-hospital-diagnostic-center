@@ -4,7 +4,7 @@ import phone_2 from "@/public/icons/phone_2.png";
 import logo from "@/public/logo.png";
 import Image from "next/image";
 import Link from "next/link";
-import { navLinks } from "./navLinks";
+import { navLinks } from "./Header/navLinks";
 const Footer = () => {
   const sections = [
     {
@@ -15,8 +15,7 @@ const Footer = () => {
 
   return (
     <footer
-      className="bg-[#F7F7F7] pt-8 md:pt-12.75 bg-contain bg-top bg-no-repeat"
-      style={{ backgroundImage: `url('/images/common/footerBg.png')` }}
+      className="bg-[#F7F7F7] pt-8 md:pt-12.75"
     >
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-14 xl:gap-28">
