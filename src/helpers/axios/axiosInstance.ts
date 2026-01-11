@@ -9,7 +9,7 @@ import Cookies from "js-cookie";
 import { toast } from "react-toastify";
 
 const instance = axios.create({
-  baseURL: getBaseUrl(),
+  baseURL: typeof window !== "undefined" ? "/api" : getBaseUrl(), 
   withCredentials: true,
 });
 
